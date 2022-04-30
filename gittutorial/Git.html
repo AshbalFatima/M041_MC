@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Git.css" rel="stylesheet">
+    <title>GitHub Tutorial</title>
+</head>
+<body>
+    <div class="heading"><h1>GitHub Tutorial for Beginners</h1></div>
+    <div>
+        <h3>Step-1: Create GitHub Account</h3>
+        <p>First we need to create our GitHub account. For this Click <a href="https://github.com/" target="_blank">here</a></p>
+    </div>
+    <div>
+        <h3>Step-2: Create a new Repository on GitHub</h3>
+        <p>To create a new repository on GitHub, log in and click on "+" on the top right corner of Navigation Bar. After that click on "New repository" from the drop down options.
+            <p>Write a name for your repository and give brief description. Add a README file and click on "Create repository" button.</p>
+            <p>A new repository will be created.</p>
+        </p>
+    </div>
+    <div>
+        <h3>Step-3: Clone the repository</h3>
+        <p>Create a new file on the system. Open Command Prompt with the path of the folder in which we are storing our file in.
+        <p>Copy the link of the repository by click on the "code"after opening the repository on GitHub. After that run command </p>
+        <p>"git clone <hhh>[our repository link]</hhh> "</p>
+        <p>on Command Prompt. </p>
+        <p>By doing this we are downloading our remote repository to our local system.</p>
+        </p>
+    </div>
+    <div>
+        <h3>Step-4: Add file in repository</h3>
+        <p>Move the newly created file in the repository folder, on our systems. After that run command
+            <p>"git add <hhh>[our file name]</hhh>"</p>
+            <p>on Command Prompt. </p>
+            <p>By doing this git selects that file, and moves it to the staging area, marking it for inclusion in the next commit. We can select all files, a directory, specific files, or even specific parts of a file for staging and commit. This means if we git add a deleted file the deletion is staged for commit.</p>
+        </p>
+    </div>
+    <div>
+        <h3>Step-5: Check git status</h3>
+        <p>Now if we run command "git status", we will be able to see that our added file is being staged means it is prepared to commit.
+            <p>The git status command displays the state of the working directory and the staging area. It lets us to see which changes have been staged, which haven't, and which files aren't being tracked by Git.</p>
+        </p>
+    </div>
+    <div>
+        <h3>Step-6: Commit</h3>
+        <p>Run command "git commit -m<hhh>"message"</hhh>"
+            <p>
+                The git commit command captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project. Git will never change them unless we explicitly ask it to.
+            </p>
+            <p>
+                The message at the end of the commit should be something related to what the commit contains(maybe of what changes we made). This helps us and other people to understand what mainly happens in each commit.
+            </p>
+        </p>
+    </div>
+    <div>
+        <h3>Step-7: Push</h3>
+        <p>Run command "git push"
+            <p>
+                By doing this we are uploading our local repository content to our remote repository. All of our commits will be transfered from local repository to remote repository.
+
+            </p>
+        </p>
+    </div>
+
+</body>
+</html>
