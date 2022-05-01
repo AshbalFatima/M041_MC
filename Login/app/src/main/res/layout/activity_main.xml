@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3EDED"
+    android:backgroundTint="#009688"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textSize="34sp"
+        android:textColor="#FFFDFD"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,11 +27,14 @@
         android:id="@+id/editTextTextPassword"
         android:layout_width="313dp"
         android:layout_height="55dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
+        android:background="#F6F3F3"
+        android:backgroundTint="#FBFAFA"
         android:ems="10"
+        android:hint=" Password"
         android:inputType="textPassword"
-        android:textSize="20sp"
-        android:hint="Password"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
@@ -38,11 +44,56 @@
         android:layout_width="313dp"
         android:layout_height="55dp"
         android:layout_marginTop="96dp"
+        android:background="#F6F3F3"
+        android:backgroundTint="#FBFAFA"
         android:ems="10"
+        android:hint=" Username"
         android:inputType="textPersonName"
-        android:hint="Username"
+
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="276dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#DCD9D9"
+        android:text="LOGIN"
+        android:textColor="#009688"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Forget Password?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
+        android:text="Don't have an Account? Create Now"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
