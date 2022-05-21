@@ -12,46 +12,50 @@
         android:id="@+id/button"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="132dp"
-        android:backgroundTint="#064A44"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#063934"
         android:text="Learning Mode"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#711D17"
         android:text="Exam       Mode"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="149dp"
         android:layout_height="71dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#0B1C7C"
         android:text="Github Repository"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="ABC"
-        android:textAlignment="center"
-        android:textColor="#FFEB3B"
-        android:textSize="90sp"
-        android:textStyle="bold"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="Learn ABC"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

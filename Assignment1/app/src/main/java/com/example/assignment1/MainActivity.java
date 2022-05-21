@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        buttonExam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intmove = new Intent(MainActivity.this , ActivityExam.class);
+                startActivity(intmove);
+            }
+
+        });
 
         buttonRepo.setOnClickListener(new View.OnClickListener() {
             @Override

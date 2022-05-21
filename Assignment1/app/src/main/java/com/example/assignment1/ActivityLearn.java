@@ -7,95 +7,179 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityLearn extends AppCompatActivity {
-    Button a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+public class ActivityLearn extends AppCompatActivity implements View.OnClickListener{
+    Button a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,buttonExam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
 
+        //buttonExam=findViewById(R.id. button30);
+
         a=findViewById(R.id. a);
-        a.setOnClickListener((View.OnClickListener) this);
+        a.setOnClickListener(this);
 
         b=findViewById(R.id. b);
-        b.setOnClickListener((View.OnClickListener) this);
+        b.setOnClickListener(this);
 
         c=findViewById(R.id. c);
-        c.setOnClickListener((View.OnClickListener) this);
+        c.setOnClickListener( this);
 
         d=findViewById(R.id. d);
-        d.setOnClickListener((View.OnClickListener) this);
+        d.setOnClickListener( this);
 
         e=findViewById(R.id. e);
-        e.setOnClickListener((View.OnClickListener) this);
+        e.setOnClickListener( this);
 
         f=findViewById(R.id. f);
-        f.setOnClickListener((View.OnClickListener) this);
+        f.setOnClickListener(this);
 
         g=findViewById(R.id. g);
-        g.setOnClickListener((View.OnClickListener) this);
+        g.setOnClickListener(this);
 
         h=findViewById(R.id. h);
-        h.setOnClickListener((View.OnClickListener) this);
+        h.setOnClickListener(this);
 
         i=findViewById(R.id. i);
-        i.setOnClickListener((View.OnClickListener) this);
+        i.setOnClickListener(this);
 
         j=findViewById(R.id. j);
-        j.setOnClickListener((View.OnClickListener) this);
+        j.setOnClickListener(this);
 
         k=findViewById(R.id. k);
-        k.setOnClickListener((View.OnClickListener) this);
+        k.setOnClickListener(this);
 
         l=findViewById(R.id. l);
-        l.setOnClickListener((View.OnClickListener) this);
+        l.setOnClickListener(this);
 
         m=findViewById(R.id. m);
-        m.setOnClickListener((View.OnClickListener) this);
+        m.setOnClickListener(this);
 
         n=findViewById(R.id. n);
-        n.setOnClickListener((View.OnClickListener) this);
+        n.setOnClickListener(this);
 
         o=findViewById(R.id. o);
-        o.setOnClickListener((View.OnClickListener) this);
+        o.setOnClickListener(this);
 
         p=findViewById(R.id. p);
-        p.setOnClickListener((View.OnClickListener) this);
+        p.setOnClickListener(this);
 
         q=findViewById(R.id. q);
-        q.setOnClickListener((View.OnClickListener) this);
+        q.setOnClickListener(this);
 
         r=findViewById(R.id. r);
-        r.setOnClickListener((View.OnClickListener) this);
+        r.setOnClickListener(this);
 
         s=findViewById(R.id. s);
-        s.setOnClickListener((View.OnClickListener) this);
+        s.setOnClickListener(this);
 
         t=findViewById(R.id. t);
-        t.setOnClickListener((View.OnClickListener) this);
+        t.setOnClickListener(this);
 
         u=findViewById(R.id. u);
-        u.setOnClickListener((View.OnClickListener) this);
+        u.setOnClickListener(this);
 
         v=findViewById(R.id. v);
-        v.setOnClickListener((View.OnClickListener) this);
+        v.setOnClickListener(this);
 
         w=findViewById(R.id. w);
-        w.setOnClickListener((View.OnClickListener) this);
+        w.setOnClickListener(this);
 
         x=findViewById(R.id. x);
-        x.setOnClickListener((View.OnClickListener) this);
+        x.setOnClickListener(this);
 
         y=findViewById(R.id. y);
-        y.setOnClickListener((View.OnClickListener) this);
+        y.setOnClickListener(this);
 
         z=findViewById(R.id. z);
-        z.setOnClickListener((View.OnClickListener) this);
+        z.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view){
         Intent itt=new Intent(ActivityLearn.this , Alphabets.class);
+        switch(view.getId()){
+            case R.id.a:
+                itt.putExtra("input","a");
+                break;
+            case R.id.b:
+                itt.putExtra("input","b");
+                break;
+            case R.id.c:
+                itt.putExtra("input","c");
+                break;
+            case R.id.d:
+                itt.putExtra("input","d");
+                break;
+            case R.id.e:
+                itt.putExtra("input","e");
+                break;
+            case R.id.f:
+                itt.putExtra("input","f");
+                break;
+            case R.id.g:
+                itt.putExtra("input","g");
+                break;
+            case R.id.h:
+                itt.putExtra("input","h");
+                break;
+            case R.id.i:
+                itt.putExtra("input","i");
+                break;
+            case R.id.j:
+                itt.putExtra("input","j");
+                break;
+            case R.id.k:
+                itt.putExtra("input","k");
+                break;
+            case R.id.l:
+                itt.putExtra("input","l");
+                break;
+            case R.id.m:
+                itt.putExtra("input","m");
+                break;
+            case R.id.n:
+                itt.putExtra("input","n");
+                break;
+            case R.id.o:
+                itt.putExtra("input","o");
+                break;
+            case R.id.p:
+                itt.putExtra("input","p");
+                break;
+            case R.id.q:
+                itt.putExtra("input","q");
+                break;
+            case R.id.r:
+                itt.putExtra("input","r");
+                break;
+            case R.id.s:
+                itt.putExtra("input","s");
+                break;
+            case R.id.t:
+                itt.putExtra("input","t");
+                break;
+            case R.id.u:
+                itt.putExtra("input","u");
+                break;
+            case R.id.v:
+                itt.putExtra("input","v");
+                break;
+            case R.id.w:
+                itt.putExtra("input","w");
+                break;
+            case R.id.x:
+                itt.putExtra("input","x");
+                break;
+            case R.id.y:
+                itt.putExtra("input","y");
+                break;
+            default:
+                itt.putExtra("input","z");
+        }
+        startActivity(itt);
+
     }
+
 }
