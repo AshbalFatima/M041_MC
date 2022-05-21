@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDFCFC"
-    android:backgroundTint="#1D7197"
+    android:backgroundTint="#048A7E"
     tools:context=".MainActivity">
 
     <Button
@@ -48,7 +48,7 @@
         android:layout_marginTop="136dp"
         android:text="ABC"
         android:textAlignment="center"
-        android:textColor="#ECBA25"
+        android:textColor="#FFEB3B"
         android:textSize="90sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
