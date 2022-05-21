@@ -19,16 +19,22 @@ public class MainActivity extends AppCompatActivity {
         buttonExam=findViewById(R.id. button2);
         buttonRepo=findViewById(R.id. button3);
 
+        buttonLearn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intmove = new Intent(MainActivity.this , ActivityLearn.class);
+                startActivity(intmove);
+            }
+
+        });
+
         buttonRepo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://github.com/areebamuzammil/M041_MC"); // missing 'http://' will cause crashed
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-
-               // counter++;
-               // textview.setText(Integer.toString(counter));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/areebamuzammil/M041_MC"));
+                startActivity(browserIntent);
             }
         });
+
     }
 }
