@@ -3,11 +3,13 @@ package com.example.assignment1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
 public class Alphabets extends AppCompatActivity {
     ImageView img;
     String alphabet;
+    private static final String TAG="Alphabets";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,5 +97,46 @@ public class Alphabets extends AppCompatActivity {
                 img.setImageResource(R.drawable.z);
         }
 
+    }
+    @Override
+
+    protected void onStart(){
+        super.onStart();
+        Log.d(TAG, " onStart Alphabets");
+    }
+
+    @Override
+
+    protected void onResume(){
+        super.onResume();
+        Log.d(TAG, " onResume Alphabets");
+    }
+
+    @Override
+
+    protected void onPause(){
+        super.onPause();
+        Log.d(TAG, " onPause Alphabets");
+    }
+
+    @Override
+
+    protected void onStop(){
+        super.onStop();
+        Log.d(TAG, " onStop Alphabets");
+    }
+
+    @Override
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(TAG, " onDestroy Alphabets");
+    }
+
+    @Override
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.d(TAG, " onRestart Alphabets");
     }
 }

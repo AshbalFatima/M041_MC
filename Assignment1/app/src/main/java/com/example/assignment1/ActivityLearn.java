@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class ActivityLearn extends AppCompatActivity implements View.OnClickListener{
     Button a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+    private static final String TAG="ActivityLearn";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -180,6 +182,47 @@ public class ActivityLearn extends AppCompatActivity implements View.OnClickList
         }
         startActivity(itt);
 
+    }
+    @Override
+
+    protected void onStart(){
+        super.onStart();
+        Log.d(TAG, " onStart Learn");
+    }
+
+    @Override
+
+    protected void onResume(){
+        super.onResume();
+        Log.d(TAG, " onResume Learn");
+    }
+
+    @Override
+
+    protected void onPause(){
+        super.onPause();
+        Log.d(TAG, " onPause Learn");
+    }
+
+    @Override
+
+    protected void onStop(){
+        super.onStop();
+        Log.d(TAG, " onStop Learn");
+    }
+
+    @Override
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(TAG, " onDestroy Learn");
+    }
+
+    @Override
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.d(TAG, " onRestart Learn");
     }
 
 }
