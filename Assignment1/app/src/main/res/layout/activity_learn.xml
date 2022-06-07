@@ -105,8 +105,8 @@
         android:id="@+id/y"
         android:layout_width="67dp"
         android:layout_height="68dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#063934"
         android:text="Y"
         android:textColor="#FFFFFF"
@@ -210,13 +210,13 @@
         android:layout_width="67dp"
         android:layout_height="68dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#063934"
         android:text="Z"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintStart_toEndOf="@+id/y"
-        app:layout_constraintTop_toBottomOf="@+id/v" />
+        app:layout_constraintTop_toBottomOf="@+id/w" />
 
     <Button
         android:id="@+id/k"

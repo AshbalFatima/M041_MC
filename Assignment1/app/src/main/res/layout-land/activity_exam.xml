@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#048A7E"
+    android:backgroundTint="#048A7E"
+    tools:context=".ActivityExam">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="148dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="385dp"
+            android:layout_marginTop="-170dp"
+            android:layout_marginBottom="36dp"
+            android:backgroundTint="#711D17"
+            android:text="End Exam"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="212dp"
+            android:layout_height="157dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="300dp"
+            android:layout_toEndOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/globe" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="362dp"
+            android:layout_height="104dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="105dp"
+            android:text="What is the name of given image?"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="114dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="-270dp"
+            android:layout_toEndOf="@+id/button5"
+            android:backgroundTint="#063934"
+            android:text="Globe"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="114dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="-270dp"
+            android:layout_toEndOf="@+id/button8"
+            android:backgroundTint="#063934"
+            android:text="Garlic"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="114dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="-270dp"
+            android:backgroundTint="#063934"
+            android:text="Apple"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="114dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="-270dp"
+            android:layout_toEndOf="@+id/button7"
+            android:backgroundTint="#063934"
+            android:text="Sun"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.912" />
+
+    </RelativeLayout>
+
+</ScrollView>
