@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">QuranDBApp</string>
+    <string name="app_name">Navigation Drawer</string>
+    <string name="open">Openning</string>
+    <string name="close">Closing</string>
 </resources>
